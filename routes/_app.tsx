@@ -1,12 +1,15 @@
 import { type PageProps } from "$fresh/server.ts";
-export default function App({ Component }: PageProps) {
+
+
+function App({ Component }: PageProps) {
   return (
     <html>
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>dairyland</title>
+        <title>Dairyland</title>
         <link rel="stylesheet" href="/styles.css" />
+        <script src={Deno.env.get("FONT_AWESOME")} crossorigin="anonymous"></script>
       </head>
       <body>
         <Component />
@@ -14,3 +17,4 @@ export default function App({ Component }: PageProps) {
     </html>
   );
 }
+export default App;

@@ -1,4 +1,4 @@
-function Landing() {
+function Blog() {
   return (
     <div class="construction">
     
@@ -6,4 +6,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Blog;

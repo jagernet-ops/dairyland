@@ -1,129 +1,107 @@
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 * {
-  margin: 0;
-}
-button {
-  color: inherit;
-}
-button, [role="button"] {
-  cursor: pointer;
-}
-code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
-}
-img,
-svg {
-  display: block;
-}
-img,
-video {
-  max-width: 100%;
-  height: auto;
+  --background-color: #3a4450; /*Cool background color but no idea what to use it for*/
+  --default-background-color: #000000;
+} 
+
+@font-face {
+  font-family: agave;
+  src: url("./fonts/agave.ttf")
 }
 
 html {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
-.transition-colors {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--default-background-color);
+  font-family: agave;
+  overflow-x: hidden;
 }
-.my-6 {
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+
+.construction {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/under-construction.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+
+/*Configures the background image to have separate opacity to the body*/
+.about-root::before {    
+  content: "";
+  background-image: url('./images/about-background.png');
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+
+.about-root {
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  color: white;
+  background-color: var(--default-background-color);
 }
-.my-4 {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+
+#headshot {
+  margin-top: 20px;
+  width: 10%;
+  border-radius: 50%;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.py-8 {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-.bg-\[\#86efac\] {
-  background-color: #86efac;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-.py-6 {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.py-1 {
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
-}
-.border-gray-500 {
-  border-color: #6b7280;
-}
-.bg-white {
-  background-color: #fff;
-}
-.flex {
+
+.about-body {
+  border-radius: 10px;
   display: flex;
-}
-.gap-8 {
-  grid-gap: 2rem;
-  gap: 2rem;
-}
-.font-bold {
-  font-weight: 700;
-}
-.max-w-screen-md {
-  max-width: 768px;
-}
-.flex-col {
   flex-direction: column;
+  align-items: center; 
+  position: relative;
+  width: 98%;
+  height: 100%;
 }
-.items-center {
+
+.about-body a, a:visited {
+  color: white;
+  font-style: italic;
+  text-decoration: underline dotted;
+}
+
+.about-body p {
+  max-width: 50%;
+}
+
+.social-legend {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
   align-items: center;
+  border: 2px solid white;
+  font-size: 2rem;
 }
-.justify-center {
-  justify-content: center;
+
+.social-legend a {
+  color: white;
+  padding: 3px;
 }
-.border-2 {
-  border-width: 2px;
+
+.social-legend a:hover {
+  color: grey;
+  padding: 3px;
 }
-.rounded {
-  border-radius: 0.25rem;
-}
-.hover\:bg-gray-200:hover {
-  background-color: #e5e7eb;
-}
-.tabular-nums {
-  font-variant-numeric: tabular-nums;
-}
+
+
+
+

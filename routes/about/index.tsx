@@ -1,4 +1,4 @@
-import SetTitle from "../islands/set-title/index.tsx"
+import SetTitle from "../../islands/set-title/index.tsx"
 
 function About() {
   return (

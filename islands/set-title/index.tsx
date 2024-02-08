@@ -10,7 +10,6 @@ interface ComponentProps {
 function SetTitle({ favicon, title, children }: ComponentProps){
   useEffect(function(){
     if(title){
-      GitHubCalendar(".calendar", "jagernet-ops")
       document.title = title;
     }
   },[])

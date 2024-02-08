@@ -7,7 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $blog from "./routes/blog.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $SetTitle from "./islands/SetTitle.tsx";
+import * as $set_title_index from "./islands/set-title/index.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -19,7 +19,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/SetTitle.tsx": $SetTitle,
+    "./islands/set-title/index.tsx": $set_title_index,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

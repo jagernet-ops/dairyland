@@ -1,3 +1,2 @@
 # 🐮 dairyland 🧀
-The source code for the about me and blog on dairyland.dev my personal domain
-
+The UI source code for dairyland.dev my domain

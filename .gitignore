@@ -1,11 +1,22 @@
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
-# Fresh build directory
-_fresh/
-# npm dependencies
-node_modules/
+/node_modules
+npm-debug.log
+yarn-error.log
+
+.env
+
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+.DS_Store
+Thumbs.db
+

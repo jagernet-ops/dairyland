@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'dairyland';
+  constructor() {
+    /*
+    const fontAwesome = document.createElement('script')
+    fontAwesome.setAttribute('src', '')
+    fontAwesome.setAttribute('crossorigin', 'anonymous')
+    document.head.appendChild(fontAwesome)
+    */
+  }
 }

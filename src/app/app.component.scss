@@ -19,7 +19,7 @@
   background-color: var(--default-background-color);
 }
 
-#headshot {
+#avatar {
   margin-top: 20px;
   width: 10%;
   border-radius: 50%;
@@ -45,26 +45,6 @@
   max-width: 50%;
 }
 
-.social-legend {
-  &:first-child {
-    padding-top: 9px;
-  }
-  position: fixed;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid white;
-  font-size: 2rem;
-  background-color: #000000
-}
-
-.social-legend a {
-  color: white;
-  padding: 3px;
-}
-
-.social-legend a:hover {
-  color: grey;
-  padding: 3px;
+dairyland-nav-bar {
+  width: 100%;
 }

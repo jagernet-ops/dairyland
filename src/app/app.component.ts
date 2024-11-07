@@ -1,21 +1,22 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+
+import { SocialLegend } from "./social-legend/social-legend.component";
+import { NavBar } from "./nav-bar/nav-bar.component";
+import { GhChart } from "./gh-chart/gh-chart.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [NavBar, SocialLegend, GhChart, RouterOutlet],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss"
 })
 export class AppComponent {
-  title = 'dairyland';
   constructor() {
-    /*
-    const fontAwesome = document.createElement('script')
-    fontAwesome.setAttribute('src', '')
-    fontAwesome.setAttribute('crossorigin', 'anonymous')
+    const fontAwesome = document.createElement("script")
+    fontAwesome.setAttribute("src", "https://kit.fontawesome.com/5a7935483d.js")
+    fontAwesome.setAttribute("crossorigin", "anonymous")
     document.head.appendChild(fontAwesome)
-    */
   }
 }

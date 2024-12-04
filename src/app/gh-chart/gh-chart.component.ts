@@ -11,7 +11,7 @@ import StorageKey from "../../constants/local-storage";
   styleUrl: "./gh-chart.component.scss"
 })
 export class GhChart {
-  public commitHistory: string = "http://ghchart.rshah.org/000000/jagernet-ops";
+  public commitHistory: string = "http://ghchart.rshah.org/008000/jagernet-ops";
 
   constructor() {
     if (!LocalStorageManager.hasKey(StorageKey.Chart)) {
@@ -34,7 +34,7 @@ export class GhChart {
       return encodedChart;
     } catch(e) {
       console.error(e)
-      return "http://ghchart.rshah.org/000000/jagernet-ops";
+      return "http://ghchart.rshah.org/008000/jagernet-ops";
     }
   }
 

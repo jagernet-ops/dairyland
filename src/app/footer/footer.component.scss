@@ -1,0 +1,52 @@
+.app-footer {
+  position: relative;
+  width: 100%;
+  background-color: #3a4450;
+  display: flex;
+  flex-flow: row no-wrap;
+  max-height: 15%;
+  justify-content: space-evenly;
+  padding: 10px 0;
+
+  #logo {
+    width: 5%;
+    filter: invert(99%) sepia(1%) saturate(589%) hue-rotate(347deg) brightness(114%) contrast(100%);
+    justify-self: flex-end !important;
+  }
+
+  .contact-info {
+    margin: 0 10px;
+    #contact-email, #contact-phone {
+      color: white;
+      text-decoration: underline dotted;
+      p {
+        padding: 0;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    .footer-legend {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      a {
+        color: white;
+        padding: 3px;
+        &:hover {
+          color: grey;
+        }
+      }
+    }
+  }
+
+  .page-reference {
+    ul {
+      list-style: none;
+      padding: 0;
+      li > a {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

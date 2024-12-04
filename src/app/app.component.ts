@@ -1,14 +1,21 @@
 import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { RouterOutlet, RouterLink, RouterLinkActive } from "@angular/router";
 
 import { SocialLegend } from "./social-legend/social-legend.component";
+import { FooterComponent } from './footer/footer.component'
 import { NavBar } from "./nav-bar/nav-bar.component";
-import { GhChart } from "./gh-chart/gh-chart.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [NavBar, SocialLegend, GhChart, RouterOutlet],
+  imports: [
+    NavBar,
+    SocialLegend,
+    FooterComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss"
 })

@@ -1,28 +1,7 @@
-<div class="about-root">
-  <social-legend />
-  <div class="about-body">
-    <nav-bar />
-    <img id="avatar" src="assets/images/avatar.png" />
-    <h1>
-      "a dairyland dev"
-    </h1>
-    <h2 id="about">
-      [about]
-    </h2>
-    <p>
-    Hi my name is Michael Shalewski, I'm an aspiring software developer living in the midwest. I currently work at Northwestern Mutual as a Full Stack Software Engineering Intern. I also am attending MSOE as an SE major.
-    </p>
-    <h2 id="skills">
-      [skills & interests]
-    </h2>
-    <img src="assets/images/interests.svg" alt="interests" />
-    <p>
-    </p>
-    <h2 id="projects">
-      [projects]
-    </h2>
-    <p>
-    </p>
-    <gh-chart />
-  </div>
+<div class="app-root">
+    <div class="router-body">
+      <nav-bar />
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer />
 </div>

@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+
 import { RouterLink, RouterLinkActive } from '@angular/router'
 
 @Component({
-  selector: 'nav-bar',
+  selector: 'app-footer',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.scss'
 })
-export class NavBar {
+export class FooterComponent {
 
 }

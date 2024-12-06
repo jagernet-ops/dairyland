@@ -1,17 +1,39 @@
-nav > ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 1% 0;
-  overflow: hidden;
-  text-align: center;
-}
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 50%;
 
-ul > li {
-  display: inline-block;
-  margin-left: 20px;
-}
+  #logo {
+    width: 10%;
+    filter: invert(99%) sepia(1%) saturate(589%) hue-rotate(347deg) brightness(114%) contrast(100%);
+    &:hover {
+      filter: invert(65%) sepia(4%) saturate(15%) hue-rotate(8deg) brightness(77%) contrast(86%);
+    }
+    align-self: center;
+  }
 
-li > a {
-  color: #FFFFFF;
-  font-size: larger;
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2% 0;
+    overflow: hidden;
+    text-align: center;
+    align-self: center;
+  }
+
+  ul > li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  li > a {
+    color: #FFFFFF;
+    font-size: x-large;
+  }
 }

@@ -1,0 +1,25 @@
+<div class="moka-engine">
+  <h1>Moka: Macros Simplified</h1>
+  <section class="moka-widget">
+    <img src="assets/images/moka.png" alt="moka macro engine icon">
+    <project-widget title="moka" repo="https://github.com/jagernet-ops/moka" language="typescript">
+      Moka is designed to be a small minimal dependency macro engine for TS/JS. Under active development building off of a fork of SweetJS.
+    </project-widget>
+  </section>
+  <h2>Inspiration:</h2>
+  <p>
+    Moka is a JavaScript library I have recently started developing The inspiration for this library comes from negative experiences handling errors in JavaScript. Due to the weakly typed nature of the language as well as the ability of the throw keyword and catch block to return any data type it drastically complicates error handling. This lead me towards a homegrown solution for handling known errors: multiple exception handling using instanceof. This solution despite the performance overhead of walking the prototypal inheritance chain has proved exceptionally useful for implementing branching control flow for identified errors. In pursuit of formalizing this method of multiple exception handling I began my investigation of macro engines.
+  </p>
+  <iframe
+    src="https://craftinginterpreters.com/"
+    width="1000"
+    height="1200"
+    allow="autoplay">
+  </iframe>
+  <h2>Development:</h2>
+  <img src="assets/images/sweetjs.png" alt="SweetJS project logo">
+  <p>
+    Development on this, and many of my personal projects, is slow due to work and school obligations. However, the project is off to a great start. By using the information provided in Robert Nystrom's publication Crafting Interpreters I have gained a working understanding of the process of lexing a language's source code. Additionally, by reverse engineering the source code of the now-deprecated macro library SweetJS, I hope to improve upon the foundation of the code base and produce a more versatile library.
+  </p>
+  <h2>Status: <span style="text-decoration: solid white underline;">In-Progress!</span></h2>
+</div>

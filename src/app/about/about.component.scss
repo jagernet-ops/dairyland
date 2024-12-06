@@ -1,4 +1,4 @@
-#avatar {
+#headshot{
   margin: 2% 0;
   width: 10%;
   border-radius: 50%;
@@ -7,7 +7,6 @@
 
 .about-body a, a:visited {
   color: white;
-  font-style: italic;
   text-decoration: underline dotted;
 }
 
@@ -26,18 +25,43 @@
   font-size: x-large;
 }
 
+.top-about {
+  display: flex;
+  width: 45%;
+  max-height: 35%;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: end;
+}
+
 .orgs {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin: 25px 0;
 }
 
 #msoe {
-  width: 14%;
+  width: 7%;
   align-self: center;
 }
 
-#nm-column {
-  width: 26%;
+#nm-column, #hunger-task-force {
+  width: 15%;
   align-self: center;
+}
+
+.skills-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 45%;
+  section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    p {
+      margin: 0;
+    }
+    margin-bottom: 4%;
+  }
 }

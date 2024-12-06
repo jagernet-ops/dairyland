@@ -1,0 +1,32 @@
+<main>
+
+  <img id="avatar" src="assets/images/avatar.png" alt="avatar">
+
+  <h1>Home</h1>
+
+  <p>
+  Welcome to <span style="font-weight: bold">Dairyland.dev</span>, the online portfolio and project hub showcasing my work as a developer. Here, you’ll find a blend of professional projects and personal endeavors, each crafted with attention to detail and a passion for innovation. I believe in crafting code that’s as satisfying as a perfectly aged wheel of cheese. Thank you for stopping by—let’s connect and make something gouda!
+  </p>
+
+  <!-- TODO: DYNAMICALLY POPULATE USING GITHUB REST API TO RETRIEVE PINNED PROJECTS -->
+
+  <h1>Pinned Projects</h1>
+  <div class="project-showcase">
+    <project-widget title="dairyland" repo="https://github.com/jagernet-ops/dairyland" language="typescript">
+      The source code for dairyland.dev my domain for hosting personal projects. Written using the Angular web framework and built with Deno.
+    </project-widget>
+    <project-widget title="moka" repo="https://github.com/jagernet-ops/moka" language="typescript">
+      Moka is designed to be a small minimal dependency macro engine for TS/JS. Under active development building off of a fork of SweetJS.
+    </project-widget>
+  </div>
+
+  <div class="project-showcase">
+    <project-widget title="rtspstream" repo="https://github.com/jagernet-ops/rtspstream" language="python">
+      rtspstream is a CLI tool to host RTSP (Real Time Streaming Protocol) streams using locally stored media.
+    </project-widget>
+    <project-widget title="fast-task" repo="https://github.com/jagernet-ops/fast-task" language="java">
+      Fast-Task was an Android mobile application for tracking tasks. I created this app as the submission to the IB Computer Science IA.
+    </project-widget>
+  </div>
+
+</main>

@@ -5,17 +5,21 @@
   display: flex;
   flex-flow: row no-wrap;
   max-height: 15%;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 10px 0;
 
   #logo {
     width: 5%;
     filter: invert(99%) sepia(1%) saturate(589%) hue-rotate(347deg) brightness(114%) contrast(100%);
-    justify-self: flex-end !important;
+    position: absolute;
+    right: 15px;
+    &:hover {
+      filter: invert(65%) sepia(4%) saturate(15%) hue-rotate(8deg) brightness(77%) contrast(86%);
+    }
   }
 
   .contact-info {
-    margin: 0 10px;
+    margin-right: 10%;
     #contact-email, #contact-phone {
       color: white;
       text-decoration: underline dotted;
@@ -41,12 +45,24 @@
   }
 
   .page-reference {
+    width: 10%;
     ul {
       list-style: none;
       padding: 0;
+      li {
+        margin-bottom: 10px;
+      }
       li > a {
         color: #FFFFFF;
       }
     }
+
+    .division {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
+
 }

@@ -1,0 +1,33 @@
+.project-widget {
+  background-color: var(--background-color);
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: large;
+  a {
+    color: white;
+  }
+  section {
+    padding: 10px;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.language-bar {
+  width: 100%;
+  height: 20px;
+}
+
+.java {
+  background-color: #b4751f;
+}
+
+.typescript {
+  background-color: #347bc2;
+}
+
+.python {
+  background-color: #2596be;
+}

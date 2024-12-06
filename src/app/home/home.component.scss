@@ -1,0 +1,33 @@
+main {
+  #avatar {
+    margin: 2% 0;
+    width: 10%;
+    border-radius: 50%;
+    box-shadow: 4px 2px 8px 2px black;
+  }
+
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+  .project-showcase {
+    margin-top: 25px;
+    width: 75%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    project-widget {
+      width: 25%;
+      margin-right: -15%;
+      margin-left: -15%;
+    }
+  }
+
+}
+
+main > p {
+  font-size: x-large;
+  max-width: 45%;
+}

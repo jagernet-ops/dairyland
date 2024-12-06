@@ -1,0 +1,26 @@
+.project-directory {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  nav {
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-right: 1%;
+    width: 10%;
+    height: 100%;
+    border-right: white 2px solid;
+    a {
+      color: white;
+      text-decoration: dotted underline;
+    }
+  }
+  .project-window {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%;
+    p {
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+  }
+}

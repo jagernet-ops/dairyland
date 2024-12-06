@@ -1,0 +1,14 @@
+.ux-project {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  p {
+    max-width: 45%;
+    font-size: larger;
+  }
+  a {
+    color: white;
+    text-decoration: dotted underline white;
+  }
+}

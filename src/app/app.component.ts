@@ -1,21 +1,21 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterOutlet, RouterLink, RouterLinkActive } from "@angular/router";
+
+import { FooterComponent } from './footer/footer.component'
+import { NavBar } from "./nav-bar/nav-bar.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [
+    NavBar,
+    FooterComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+  ],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss"
 })
 export class AppComponent {
-  title = 'dairyland';
-  constructor() {
-    /*
-    const fontAwesome = document.createElement('script')
-    fontAwesome.setAttribute('src', '')
-    fontAwesome.setAttribute('crossorigin', 'anonymous')
-    document.head.appendChild(fontAwesome)
-    */
-  }
 }

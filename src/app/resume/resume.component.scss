@@ -1,0 +1,23 @@
+.resume-embed {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 4 / 3;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 10px;
+
+  #publish-date {
+    text-decoration: underline dotted white;
+  }
+  .download-icon {
+    margin-top: 18px;
+    color: white;
+    &:hover {
+      color: grey;
+    }
+  }
+}

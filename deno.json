@@ -1,0 +1,18 @@
+{
+  "unstable": ["sloppy-imports"]
+  "lint": {
+    "include": ["src/"],
+    "exclude": [],
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars", "no-sloppy-imports"]
+    }
+  }
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "ES2022"
+    ]
+  }
+}

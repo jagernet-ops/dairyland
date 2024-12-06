@@ -20,4 +20,4 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "deno task build"
+        run: "deno install && deno run build"

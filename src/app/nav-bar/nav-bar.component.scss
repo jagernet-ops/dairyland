@@ -5,7 +5,7 @@
   width: 50%;
 
   #logo {
-    width: 10%;
+    width: 12%;
     filter: invert(99%) sepia(1%) saturate(589%) hue-rotate(347deg) brightness(114%) contrast(100%);
     &:hover {
       filter: invert(65%) sepia(4%) saturate(15%) hue-rotate(8deg) brightness(77%) contrast(86%);
@@ -16,6 +16,7 @@
   nav {
     display: flex;
     flex-flow: row nowrap;
+    width: 100%;
   }
 
   nav > ul {
@@ -34,6 +35,6 @@
 
   li > a {
     color: #FFFFFF;
-    font-size: x-large;
+    font-size: large;
   }
 }

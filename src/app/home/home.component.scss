@@ -14,6 +14,7 @@ main {
 
   .project-showcase {
     margin-top: 25px;
+    margin-bottom: 2%;
     width: 75%;
     display: flex;
     flex-flow: row nowrap;
@@ -28,6 +29,6 @@ main {
 }
 
 main > p {
-  font-size: x-large;
+  font-size: large;
   max-width: 45%;
 }

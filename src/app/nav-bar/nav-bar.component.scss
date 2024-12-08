@@ -1,8 +1,7 @@
 .header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
-  width: 50%;
+  width: 60%;
 
   #logo {
     width: 12%;
@@ -17,6 +16,7 @@
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
+    justify-self: end;
   }
 
   nav > ul {
@@ -35,6 +35,6 @@
 
   li > a {
     color: #FFFFFF;
-    font-size: large;
+    font-size: medium;
   }
 }
